@@ -80,7 +80,7 @@ export function Products({ coffee }: Coffee) {
               quantity={quantity}
             />
             <Cart disabled={ZeroQuantity} onClick={handleAddItem}>
-              <ShoppingCart />
+                <ShoppingCart />
             </Cart>
           </QuantityProducts>
         </ProductInfo>

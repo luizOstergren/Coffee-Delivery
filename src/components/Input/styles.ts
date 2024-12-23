@@ -9,6 +9,7 @@ export const InputWrapper = styled.div`
 
 interface InputContainerProps {
     hasError: boolean;
+    children?: React.ReactNode
 }
 
 export const InputStyleContainer = styled.div<InputContainerProps>`

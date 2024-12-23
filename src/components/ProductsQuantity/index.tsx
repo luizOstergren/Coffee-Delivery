@@ -17,7 +17,7 @@ export function ProductsQuantity({
   return (
     <>
       <ProductQuantity>
-        <MinusButton disabled={ZeroQuantity} onClick={onMenusQuantity}>
+        <MinusButton as="button" disabled={ZeroQuantity} onClick={onMenusQuantity}>
           <Minus />
         </MinusButton>
         {quantity}

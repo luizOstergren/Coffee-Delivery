@@ -17,7 +17,8 @@ export const ProductQuantity = styled.div`
     }
 `
 
-export const MinusButton = styled.button`
+
+export const MinusButton = styled.button`:
     border: none;
     display: flex;
     align-items: center;

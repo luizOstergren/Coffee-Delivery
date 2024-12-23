@@ -46,7 +46,7 @@ export function CheckoutRequestOrders({ coffee }: CheckoutRequestProps) {
             onPlusQuantity={handleIncrease}
             quantity={coffee.quantity}
           />
-          <RequestRemove onClick={handleRemove}>
+          <RequestRemove as="button" onClick={handleRemove}>
             <Trash size={18} />
             Remover
           </RequestRemove>

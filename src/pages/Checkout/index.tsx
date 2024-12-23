@@ -57,7 +57,7 @@ export function Checkout() {
   return (
     <>
       <FormProvider {...confirmOrderForm}>
-        <CompleteOrderContainer
+        <CompleteOrderContainer as="button"
           className="container"
           onSubmit={handleSubmit(handleConfirmOrder)}
         >

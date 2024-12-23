@@ -2,10 +2,14 @@ import { forwardRef, InputHTMLAttributes } from "react";
 import {
   InputWrapper,
   InputStyleContainer,
-  InputAdress,
+  InputAdress as StyledInputAdress,
   RightText,
   ErrorText,
 } from "./styles";
+
+const InputAdress = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>(
+  (props, ref) => <StyledInputAdress as="input" ref={ref} {...props} />
+);
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   error?: string;

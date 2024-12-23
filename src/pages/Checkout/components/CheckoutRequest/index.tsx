@@ -43,7 +43,7 @@ export function CheckoutRequest() {
             Total
             <span>R$ {cartPrice}</span>
           </RequestTotal>
-          <RequestConfirmOrder type="submit" disabled={cartQuantity <= 0}>
+          <RequestConfirmOrder as="button" type="submit" disabled={cartQuantity <= 0}>
             CONFIRMAR PEDIDO
           </RequestConfirmOrder>
         </RequestContainer>

@@ -78,7 +78,13 @@ export const QuantityProducts = styled.div`
     
 `
 
-export const Cart = styled.button`
+interface CartProps {
+    children: React.ReactNode;
+    disabled: boolean;
+    onClick: () => void;
+}
+
+export const Cart = styled.button<CartProps>`
     background-color: ${props => props.theme["purple-dark"]};
     display: flex;
     align-items: center;
